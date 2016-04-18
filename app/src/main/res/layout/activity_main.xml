@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/qqlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="login"
+        android:text="QQ登陆" />
+    <Button
+        android:id="@+id/wxlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="login"
+        android:text="微信登陆" />
+    <Button
+        android:id="@+id/wblogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="login"
+        android:text="微博登陆" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.7dp"
+    android:background="@color/colorAccent"/>
+    <Button
+        android:id="@+id/qqshare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="share"
+        android:text="一键分享" />
+
+</LinearLayout>
