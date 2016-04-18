@@ -9,13 +9,15 @@
 在project 中build.gradle下增加(已有跳过)
 `allprojects {
         repositories {
-            maven { url "https://jitpack.io" }
+        maven { url "https://jitpack.io" }
         }
-    }`
+}
+`
 在app module中增加
 `dependencies {
-            compile 'com.github.fg2q1q3q:DropDownMenu:1.1.1'
-    }`
+        compile 'com.github.fg2q1q3q:DropDownMenu:1.1.1'
+}
+`
 * 使用
 只需在要使用的地方初始化ShareUtils，然后调用login/share方法即可，参考demo
 * 注意
