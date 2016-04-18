@@ -16,7 +16,7 @@
 在app module中build.gradle下增加
 
     dependencies {
-            compile 'com.github.fg2q1q3q:DropDownMenu:1.1.1'
+            compile 'com.github.fg2q1q3q:UmengShare:1.0.0'
     }
 
 # 使用
@@ -64,4 +64,13 @@
 # 注意
 各平台参数在Application中初始化，wxapi等文件夹需要按照各平台文档放在固定位置
 # 已知问题
-目前发现一键分享中点击新浪平台会直接crash，应该是umeng的问题，尚未排查，稍后补充
+ * 由于umeng demo未申请微信登录权限，所以微信登陆会提示参数错误，无视即可
+ * 目前发现一键分享中点击新浪平台会直接crash，应该是umeng的问题，尚未排查，稍后补充
+# demo下载
+详情可参考demo，[点此下载][1]或扫描二维码
+![此处输入图片的描述][2]
+
+
+
+  [1]: https://www.pgyer.com/fXOm
+  [2]: https://o1wjx1evz.qnssl.com/app/qrcode/fXOm
