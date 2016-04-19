@@ -104,7 +104,7 @@
     -keep class com.umeng.socialize.handler.**
     -keep class com.umeng.socialize.handler.*
     -keep class com.tencent.mm.sdk.modelmsg.WXMediaMessage {*;}
-    -keep class com.tencent.mm.sdk.modelmsg.** implements                                                 com.tencent.mm.sdk.modelmsg.WXMediaMessage$IMediaObject {*;}
+    -keep class com.tencent.mm.sdk.modelmsg.** implements com.tencent.mm.sdk.modelmsg.WXMediaMessage$IMediaObject {*;}
     -keep class im.yixin.sdk.api.YXMessage {*;}
     -keep class im.yixin.sdk.api.** implements im.yixin.sdk.api.YXMessage$YXMessageData{*;}
     -dontwarn twitter4j.**
