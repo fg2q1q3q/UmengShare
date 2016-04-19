@@ -16,7 +16,7 @@
 在app module中build.gradle下增加
 
     dependencies {
-            compile 'com.github.fg2q1q3q:UmengShare:1.0.0'
+            compile 'com.github.fg2q1q3q:UmengShare:1.1.0'
     }
 
 # 使用
