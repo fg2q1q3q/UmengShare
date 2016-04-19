@@ -4,6 +4,7 @@
 功能参考umeng官方sdk，由于自己项目需要，只集成了新浪、QQ/Qzone、微信/朋友圈 三个平台的登陆和分享，demo中分享采用一键分享，当然你也可以按照官方提供的文档进行自定义分享
 
 # 一步集成、一步调用即可轻松实现
+1.2.0修复新浪微博登陆和分享crash问题
 # 集成
 在project 中build.gradle下增加(已有跳过)
 
@@ -16,7 +17,7 @@
 在app module中build.gradle下增加
 
     dependencies {
-            compile 'com.github.fg2q1q3q:UmengShare:1.1.0'
+            compile 'com.github.fg2q1q3q:UmengShare:1.2.0'
     }
 
 # 使用
@@ -65,7 +66,6 @@
 各平台参数在Application中初始化，wxapi等文件夹需要按照各平台文档放在固定位置
 # 已知问题
  * 由于umeng demo未申请微信登录权限，所以微信登陆会提示参数错误，无视即可
- * 目前发现一键分享中点击新浪平台会直接crash，应该是umeng的问题，尚未排查，稍后补充
 
 # demo下载
 详情可参考demo，[点此下载][1]或扫描二维码

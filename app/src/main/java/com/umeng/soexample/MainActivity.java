@@ -3,6 +3,7 @@ package com.umeng.soexample;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 platform = SHARE_MEDIA.SINA;
                 break;
         }
+        Log.d("zxl","555555555");
         su.login(platform, new ILoginCallback() {
             @Override
             public void onSuccess(Map<String, String> data) {

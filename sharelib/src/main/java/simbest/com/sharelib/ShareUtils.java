@@ -2,6 +2,7 @@ package simbest.com.sharelib;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.util.Log;
 
 import com.umeng.socialize.ShareAction;
 import com.umeng.socialize.UMAuthListener;
@@ -29,6 +30,7 @@ public class ShareUtils {
 
     public void login(SHARE_MEDIA platform, ILoginCallback callback) {
         this.loginCallback = callback;
+        Log.d("zxl","444444444");
         mShareAPI.doOauthVerify(c, platform, umAuthListener);
     }
 
@@ -48,6 +50,7 @@ public class ShareUtils {
     private UMAuthListener umAuthListener = new UMAuthListener() {
         @Override
         public void onComplete(SHARE_MEDIA platform, int action, Map<String, String> data) {
+            Log.d("zxl","登陆授权获取成功"+data);
             if (data != null) {
                 mShareAPI.getPlatformInfo(c, platform, getInfoListener);
             }
@@ -55,17 +58,20 @@ public class ShareUtils {
 
         @Override
         public void onError(SHARE_MEDIA platform, int action, Throwable t) {
+            Log.d("zxl","000000000");
             loginCallback.onFaild("授权失败");
         }
 
         @Override
         public void onCancel(SHARE_MEDIA platform, int action) {
+            Log.d("zxl","111111111");
             loginCallback.onCancel();
         }
     };
     private UMAuthListener getInfoListener = new UMAuthListener() {
         @Override
         public void onComplete(SHARE_MEDIA platform, int action, Map<String, String> data) {
+            Log.d("zxl","获取用户信息成功"+data);
             if (data != null) {
                 loginCallback.onSuccess(data);
             }
@@ -73,11 +79,13 @@ public class ShareUtils {
 
         @Override
         public void onError(SHARE_MEDIA platform, int action, Throwable t) {
+            Log.d("zxl","22222222");
             loginCallback.onFaild("获取用户信息失败");
         }
 
         @Override
         public void onCancel(SHARE_MEDIA platform, int action) {
+            Log.d("zxl","33333333");
             loginCallback.onCancel();
         }
     };
